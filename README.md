@@ -15,3 +15,4 @@ for watermelon dataset, the Feature in Chinese are changed into one hot encoding
 
 触感: 软粘->0 硬滑->1
 
+好瓜: 否->0  是->1
