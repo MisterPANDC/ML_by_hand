@@ -56,8 +56,8 @@ class LogisticModel():
         return gradient
 
     def train(self, batchsize = 6, epoch = 500):
-        TrainLoss = np.zeros((1, epoch))
-        ValidationLoss = np.zeros((1, epoch))
+        TrainLoss = np.zeros((epoch))
+        ValidationLoss = np.zeros((epoch))
         for i in range(0, epoch, 1):
             print("-----------")
             print("round = ", i)
@@ -66,8 +66,8 @@ class LogisticModel():
             print(self.beta)
             currentLoss = self.loss(self.trainset)
             #print("current loss is ", currentLoss)
-            TrainLoss[:, i] = currentLoss
-            ValidationLoss[:, i] = self.validation()
+            TrainLoss[i] = currentLoss
+            ValidationLoss[i] = self.validation()
         
         self.display(TrainLoss, ValidationLoss)
     
