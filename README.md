@@ -1,7 +1,7 @@
 # ML_by_hand
 
 ## Logistic Regression Models
-for watermelon dataset, the Feature in Chinese are changed into one hot encoding
+for watermelon dataset, the Feature in Chinese are changed into 
 
 色泽:	乌黑->0 青绿->1 浅白->2
 
